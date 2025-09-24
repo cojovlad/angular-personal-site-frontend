@@ -1,0 +1,81 @@
+.win95-window-buttons {
+  display: flex;
+  gap: 2px;
+}
+
+.win95-btn {
+  width: 20px;
+  height: 20px;
+  background: #c0c0c0;
+  border: 2px solid;
+  border-color: #fff #404040 #404040 #fff;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  font-family: "MS Sans Serif", "Tahoma", sans-serif;
+  cursor: default;
+  color: black;
+}
+
+.win95-btn:active {
+  border-color: #404040 #fff #fff #404040;
+}
+
+.personal-info-window .card-header {
+  background-color: #808080;
+  color: white;
+  padding: 3px 5px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #404040;
+}
+
+.header-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.photo-wrapper {
+  background-color: white;
+  border: 2px solid #000;
+  padding: 2px;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.personal-photo {
+  width: 100px;
+  height: 120px;
+  border: 2px inset #c0c0c0;
+}
+
+.contact-icon {
+  height: 1em;
+  width: auto;
+  margin-right: 5px;
+}
+
+.about-text {
+  margin-bottom: 1rem;
+}
+
+.contact-section h6 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+
+.social-links a {
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}

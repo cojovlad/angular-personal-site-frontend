@@ -1,0 +1,197 @@
+.desktop {
+  margin-top: 35px;
+  padding: 20px;
+  min-height: calc(100vh - 35px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.win95-window-buttons {
+  display: flex;
+  gap: 2px;
+}
+
+.win95-btn {
+  width: 20px;
+  height: 20px;
+  background: #c0c0c0;
+  border: 2px solid;
+  border-color: #fff #404040 #404040 #fff;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  font-family: "MS Sans Serif", "Tahoma", sans-serif;
+  cursor: default;
+  color: black;
+}
+
+.win95-btn:active {
+  border-color: #404040 #fff #fff #404040;
+}
+
+.personal-info-window {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid;
+  border-color: #fff #404040 #404040 #fff;
+  background-color: #c0c0c0;
+  font-family: "MS Sans Serif", "Tahoma", sans-serif;
+}
+
+.personal-info-window .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #808080;
+  color: white;
+  padding: 3px 5px;
+  font-weight: bold;
+  border-bottom: 2px solid #404040;
+}
+
+.header-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.personal-info-window .card-body {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+
+.photo-wrapper {
+  display: block;
+  background-color: white;
+  border: 2px solid #000;
+  padding: 2px;
+}
+
+.personal-photo {
+  display: block;
+  width: 100px;
+  height: 120px;
+  border: 2px inset #c0c0c0;
+}
+
+.info-text {
+  flex: 1;
+}
+
+.about-text {
+  margin-bottom: 0.5rem;
+}
+
+.contact-section h6 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.contact-icon {
+  height: 1em;
+  width: auto;
+}
+
+.social-links {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.dvd-screensaver-window {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid;
+  border-color: #fff #404040 #404040 #fff;
+  background-color: #c0c0c0;
+  font-family: "MS Sans Serif", "Tahoma", sans-serif;
+  flex: 1;
+}
+
+.dvd-screensaver-window .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #808080;
+  color: white;
+  padding: 3px 5px;
+  font-weight: bold;
+  border-bottom: 2px solid #404040;
+}
+
+.dvd-screensaver-window .card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 10px;
+  background-color: #c0c0c0;
+  text-align: center;
+}
+
+.dvd-screensaver-window canvas {
+  flex: 1;
+  width: 100%;
+  border: 2px inset #c0c0c0;
+  background-color: black;
+  display: block;
+  margin: 0 auto;
+}
+
+.dvd-screensaver-window .status {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #000080;
+}
+
+.sections-overview-window {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid;
+  border-color: #fff #404040 #404040 #fff;
+  background-color: #c0c0c0;
+  font-family: "MS Sans Serif", "Tahoma", sans-serif;
+}
+
+.sections-overview-window .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #808080;
+  color: white;
+  padding: 3px 5px;
+  font-weight: bold;
+  border-bottom: 2px solid #404040;
+}
+
+.sections-overview-window .card-body {
+  padding: 10px;
+}

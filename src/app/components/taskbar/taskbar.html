@@ -1,0 +1,43 @@
+<nav class="taskbar">
+  <div class="taskbar-left">
+    <button class="start-button">
+      <img [src]="startImg" alt="{{ 'TASKBAR.START' | translate }}">
+      {{ 'TASKBAR.START' | translate }}
+    </button>
+
+    <button class="taskbar-app" data-page="personal-info">
+      <img src="assets/img/about-me.png" alt="{{ 'TASKBAR.ABOUT_ME' | translate }}">
+      {{ 'TASKBAR.ABOUT_ME' | translate }}
+    </button>
+    <button class="taskbar-app" data-page="teaching">
+      <img src="assets/img/teaching.png" alt="{{ 'TASKBAR.TEACHING' | translate }}">
+      {{ 'TASKBAR.TEACHING' | translate }}
+    </button>
+    <button class="taskbar-app" data-page="solved-problems">
+      <img src="assets/img/solved-problems.png" alt="{{ 'TASKBAR.SOLVED_PROBLEMS' | translate }}">
+      {{ 'TASKBAR.SOLVED_PROBLEMS' | translate }}
+    </button>
+  </div>
+
+  <div class="taskbar-clock-wrapper">
+    <div class="taskbar-clock" id="realTimeClock">
+      <button class="lang-toggle" (click)="toggleLangMenu()">
+        <img
+          [src]="currentLang === 'ro' ? 'https://s.w.org/images/core/emoji/16.0.1/svg/1f1f7-1f1f4.svg' : 'https://s.w.org/images/core/emoji/16.0.1/svg/1f1ec-1f1e7.svg'"
+          alt="{{currentLang}}">
+      </button>
+      {{ currentTime }}
+    </div>
+
+    <div class="lang-menu" *ngIf="langOpen">
+      <button class="lang-item" (click)="setLang('en')">
+        <img src="https://s.w.org/images/core/emoji/16.0.1/svg/1f1ec-1f1e7.svg" alt="English">
+        {{ 'LANG.ENGLISH' | translate }}
+      </button>
+      <button class="lang-item" (click)="setLang('ro')">
+        <img src="https://s.w.org/images/core/emoji/16.0.1/svg/1f1f7-1f1f4.svg" alt="Română">
+        {{ 'LANG.ROMANIAN' | translate }}
+      </button>
+    </div>
+  </div>
+</nav>

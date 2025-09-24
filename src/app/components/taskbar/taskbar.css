@@ -1,0 +1,145 @@
+.taskbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 35px;
+  background-color: #C0C0C0;
+  border-bottom: 2px solid #dfdfdf;
+  border-top: 2px solid #000000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.taskbar-left {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.start-button {
+  display: flex;
+  align-items: center;
+  height: 26px;
+  padding: 0 8px;
+  background-color: #C0C0C0;
+  border: 2px outset #C0C0C0;
+  font-weight: bold;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.start-button:active {
+  border: 2px inset #C0C0C0;
+}
+
+.start-button img {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.taskbar-app {
+  display: flex;
+  align-items: center;
+  height: 26px;
+  padding: 0 8px;
+  margin-right: 3px;
+  background-color: #C0C0C0;
+  border: 2px outset #C0C0C0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.taskbar-app:active {
+  border: 2px inset #C0C0C0;
+}
+
+.taskbar-app.active {
+  border: 2px inset #C0C0C0;
+  background-color: #A0A0A0;
+}
+
+.taskbar-app img {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.taskbar-app:hover {
+  background-color: #000080;
+  color: white;
+}
+
+.taskbar-clock-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.taskbar-clock {
+  display: flex;
+  align-items: center;
+  height: 26px;
+  padding: 0 6px;
+  background-color: #C0C0C0;
+  border: 2px inset #C0C0C0;
+  font-family: 'MS Sans Serif', Tahoma, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  gap: 6px;
+  cursor: default;
+}
+
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  background: #C0C0C0;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.lang-toggle img {
+  width: 16px;
+  height: 11px;
+}
+
+.lang-menu {
+  position: absolute;
+  right: 0;
+  top: 28px;
+  background: #C0C0C0;
+  border: 2px outset #fff;
+  display: flex;
+  flex-direction: column;
+  min-width: 120px;
+  z-index: 2000;
+  padding: 2px 0;
+}
+
+.lang-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 6px;
+  font-family: 'MS Sans Serif', Tahoma, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  background: #C0C0C0;
+  border: 2px outset #fff;
+  cursor: pointer;
+}
+
+.lang-item:active {
+  border-style: inset;
+}
+
+.lang-item img {
+  width: 16px;
+  height: 11px;
+}

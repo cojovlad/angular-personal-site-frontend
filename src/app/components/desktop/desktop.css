@@ -1,0 +1,92 @@
+.desktop {
+  margin-top: 35px;
+  padding: 20px;
+  min-height: calc(100vh - 35px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left-column > *,
+.right-column > * {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+}
+
+.personal-info-window,
+.dvd-screensaver-window,
+.sections-overview-window {
+  border: 2px solid;
+  border-color: #fff #404040 #404040 #fff;
+  background-color: #c0c0c0;
+  box-shadow: 2px 2px 0px #808080;
+  font-family: "MS Sans Serif", "Tahoma", sans-serif;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #808080;
+  color: white;
+  padding: 3px 5px;
+  font-weight: bold;
+  border-bottom: 2px solid #404040;
+}
+
+.win95-window-buttons {
+  display: flex;
+  gap: 2px;
+}
+
+.win95-btn {
+  width: 20px;
+  height: 20px;
+  background: #c0c0c0;
+  border: 2px solid;
+  border-color: #fff #404040 #404040 #fff;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  cursor: default;
+  color: black;
+}
+
+.win95-btn:active {
+  border-color: #404040 #fff #fff #404040;
+}
+
+.card-body {
+  padding: 10px;
+  background-color: #c0c0c0;
+}
+
+.dvd-screensaver-window canvas {
+  display: block;
+  margin: 0 auto;
+  border: 2px inset #c0c0c0;
+  background-color: black;
+}
+
+.dvd-screensaver-window .status {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #000080;
+}
