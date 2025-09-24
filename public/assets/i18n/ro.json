@@ -6,7 +6,7 @@
     "SOLVED_PROBLEMS": "Probleme rezolvate"
   },
   "LANG": {
-    "ENGLISH": "English",
+    "ENGLISH": "Engleza",
     "ROMANIAN": "Romana"
   },
   "WINDOW_BUTTONS": {
@@ -51,5 +51,8 @@
     "SUBTITLE": "Solutii",
     "DESCRIPTION": "Solutii pentru probleme provocatoare.",
     "OPEN_BUTTON": "Deschide"
+  },
+  "DESCRIPTION": {
+    "ABOUT_ME": "Salut! Eu sunt Vlad, un programator pasionat de proiecte si technologii interesante."
   }
 }

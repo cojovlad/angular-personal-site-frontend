@@ -7,7 +7,7 @@
   },
   "LANG": {
     "ENGLISH": "English",
-    "ROMANIAN": "Română"
+    "ROMANIAN": "Romanian"
   },
   "WINDOW_BUTTONS": {
     "MINIMIZE": "_",
@@ -51,5 +51,8 @@
     "SUBTITLE": "Solutions",
     "DESCRIPTION": "Solutions to challenging problems.",
     "OPEN_BUTTON": "Open"
+  },
+  "DESCRIPTION": {
+    "ABOUT_ME": "Hello! I am Vlad, a programmer passionate about building projects and exploring new technologies."
   }
 }
