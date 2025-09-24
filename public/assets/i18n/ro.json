@@ -1,0 +1,55 @@
+{
+  "TASKBAR": {
+    "START": "Start",
+    "ABOUT_ME": "Despre mine",
+    "TEACHING": "Predare",
+    "SOLVED_PROBLEMS": "Probleme rezolvate"
+  },
+  "LANG": {
+    "ENGLISH": "English",
+    "ROMANIAN": "Romana"
+  },
+  "WINDOW_BUTTONS": {
+    "MINIMIZE": "_",
+    "MAXIMIZE": "□",
+    "CLOSE": "X"
+  },
+  "SITE_SECTIONS": {
+    "TITLE": "Sectiuni ale site-ului",
+    "IMAGE_ALT": "Pictograma Sectiuni Site"
+  },
+  "ABOUT_ME": {
+    "TITLE": "Despre mine",
+    "IMAGE_ALT": "Pictograma profil",
+    "PHOTO_ALT": "Fotografia ta",
+    "BIO": "De completat - BIO",
+    "CONTACT": {
+      "TITLE": "Informatii de contact:",
+      "EMAIL": "Email",
+      "LINKEDIN": "LinkedIn",
+      "GITHUB": "GitHub"
+    }
+  },
+  "TEACHING": {
+    "TITLE": "Predare - C++",
+    "IMAGE_ALT": "Pictograma Predare",
+    "SUBTITLE": "Resurse educationale",
+    "DESCRIPTION": "Tutoriale si ghiduri pentru invatare.",
+    "OPEN_BUTTON": "Deschide",
+    "TABS": {
+      "BASICS": "Bazele",
+      "ADVANCED": "Avansat",
+      "EXAMPLES": "Exemple"
+    },
+    "CONTENT": {
+      "BASICS": "Conceptele de baza C++ sunt explicate aici."
+    }
+  },
+  "SOLVED_PROBLEMS": {
+    "TITLE": "Probleme rezolvate",
+    "IMAGE_ALT": "Pictograma Probleme Rezolvate",
+    "SUBTITLE": "Solutii",
+    "DESCRIPTION": "Solutii pentru probleme provocatoare.",
+    "OPEN_BUTTON": "Deschide"
+  }
+}

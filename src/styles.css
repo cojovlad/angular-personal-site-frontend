@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #008080; /* Classic Windows 95 teal desktop */
+  font-family: "MS Sans Serif", Tahoma, sans-serif;
+  font-size: 11px;
+  overflow-x: hidden;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.fade-in {
+  animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

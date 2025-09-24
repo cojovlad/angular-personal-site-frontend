@@ -1,0 +1,55 @@
+{
+  "TASKBAR": {
+    "START": "Start",
+    "ABOUT_ME": "About Me",
+    "TEACHING": "Teaching",
+    "SOLVED_PROBLEMS": "Solved Problems"
+  },
+  "LANG": {
+    "ENGLISH": "English",
+    "ROMANIAN": "Română"
+  },
+  "WINDOW_BUTTONS": {
+    "MINIMIZE": "_",
+    "MAXIMIZE": "□",
+    "CLOSE": "X"
+  },
+  "SITE_SECTIONS": {
+    "TITLE": "Site Sections",
+    "IMAGE_ALT": "Site Sections Icon"
+  },
+  "ABOUT_ME": {
+    "TITLE": "About Me",
+    "IMAGE_ALT": "Profile Icon",
+    "PHOTO_ALT": "Your Photo",
+    "BIO": "To be completed - BIO",
+    "CONTACT": {
+      "TITLE": "Contact Information:",
+      "EMAIL": "Email",
+      "LINKEDIN": "LinkedIn",
+      "GITHUB": "GitHub"
+    }
+  },
+  "TEACHING": {
+    "TITLE": "Teaching - C++",
+    "IMAGE_ALT": "Teaching Icon",
+    "SUBTITLE": "Educational Resources",
+    "DESCRIPTION": "Tutorials and guides for learning.",
+    "OPEN_BUTTON": "Open",
+    "TABS": {
+      "BASICS": "Basics",
+      "ADVANCED": "Advanced",
+      "EXAMPLES": "Examples"
+    },
+    "CONTENT": {
+      "BASICS": "Basic C++ concepts would be explained here."
+    }
+  },
+  "SOLVED_PROBLEMS": {
+    "TITLE": "Solved Problems",
+    "IMAGE_ALT": "Solved Problems Icon",
+    "SUBTITLE": "Solutions",
+    "DESCRIPTION": "Solutions to challenging problems.",
+    "OPEN_BUTTON": "Open"
+  }
+}
