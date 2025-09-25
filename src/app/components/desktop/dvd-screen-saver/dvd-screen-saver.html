@@ -1,14 +1,20 @@
-<section class="dvd-screensaver-window">
-  <div class="card-header">
-    <span>DVD Screensaver</span>
-    <div class="win95-window-buttons">
-      <button class="win95-btn">_</button>
-      <button class="win95-btn">□</button>
-      <button class="win95-btn">×</button>
+<div class="win95-window dvd-screensaver-window">
+  <div class="title-bar">
+    <div class="title-bar-text">
+      <img src="assets/img/dvd-icon.png" alt="DVD" class="title-bar-icon">
+      DVD Screensaver
+    </div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize">_</button>
+      <button aria-label="Maximize">□</button>
+      <button aria-label="Close">×</button>
     </div>
   </div>
-  <div class="card-body">
-    <canvas #dvdCanvas></canvas>
-    <div class="status">DVD Logo Bouncing...</div>
+
+  <div class="window-body">
+    <canvas #dvdCanvas class="dvd-canvas"></canvas>
+    <div class="status-bar">
+      <p class="status-bar-field">Bouncing DVD Logo</p>
+    </div>
   </div>
-</section>
+</div>

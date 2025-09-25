@@ -1,8 +1,12 @@
-import { AfterViewInit, Component, ElementRef, ViewChild, OnDestroy } from '@angular/core';
+import {AfterViewInit, Component, ElementRef, ViewChild, OnDestroy} from '@angular/core';
+import {TranslatePipe} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-dvd-screen-saver',
   templateUrl: './dvd-screen-saver.html',
+  imports: [
+    TranslatePipe
+  ],
   styleUrls: ['./dvd-screen-saver.css']
 })
 export class DvdScreenSaver implements AfterViewInit, OnDestroy {

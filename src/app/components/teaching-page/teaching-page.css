@@ -1,0 +1,177 @@
+.window-container {
+  position: fixed;
+  top: 40px; /* Distance from taskbar */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+}
+
+.win95-explorer {
+  width: 100%;
+  height: 100%;
+  border: 2px solid;
+  border-color: #dfdfdf #000000 #000000 #dfdfdf;
+  background: #c0c0c0;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-bar {
+  background: linear-gradient(90deg, #000080, #1084d0);
+  color: white;
+  padding: 2px 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  font-weight: bold;
+  border-bottom: 2px groove;
+}
+
+.title-bar-controls {
+  display: flex;
+  gap: 2px;
+}
+
+.title-bar-controls button {
+  background: #c0c0c0;
+  border: 2px solid;
+  border-color: #dfdfdf #000000 #000000 #dfdfdf;
+  width: 16px;
+  height: 14px;
+  font-size: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-bar-controls button:active {
+  border-color: #000000 #dfdfdf #dfdfdf #000000;
+}
+
+.menu-bar {
+  display: flex;
+  padding: 2px;
+  background: silver;
+  border-bottom: 2px groove;
+}
+
+.menu-item {
+  background: none;
+  border: 1px solid transparent;
+  padding: 2px 8px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 13px;
+}
+
+.menu-item:hover {
+  background: navy;
+  color: white;
+  border: 1px dotted white;
+}
+
+.window-body {
+  display: flex;
+  flex: 1;
+  height: calc(100% - 70px);
+  background: white;
+}
+
+.tree-view {
+  width: 250px;
+  border-right: 2px groove;
+  overflow: auto;
+  padding: 4px;
+  background: white;
+  font-size: 13px;
+}
+
+.tree-view ul {
+  list-style: none;
+  padding-left: 16px;
+  margin: 0;
+}
+
+.tree-view li {
+  padding: 1px 2px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.tree-view li:hover {
+  background: navy;
+  color: white;
+}
+
+.file-list {
+  flex: 1;
+  overflow: auto;
+  background: white;
+}
+
+.w95-table {
+  border-collapse: collapse;
+  font-size: 13px;
+  width: 100%;
+}
+
+.w95-table th {
+  background: silver;
+  border: 1px solid;
+  border-color: #dfdfdf #000000 #000000 #dfdfdf;
+  padding: 2px 4px;
+  text-align: left;
+  font-weight: normal;
+}
+
+.w95-table td {
+  border: 1px solid silver;
+  padding: 2px 4px;
+  text-align: left;
+}
+
+.w95-table tr:hover td {
+  background: navy;
+  color: white;
+}
+
+.status-bar {
+  background: silver;
+  border-top: 2px groove;
+  padding: 2px 4px;
+  display: flex;
+  font-size: 12px;
+}
+
+.status-bar-field {
+  margin: 0;
+  flex: 1;
+}
+
+/* Scrollbar styling */
+.tree-view::-webkit-scrollbar,
+.file-list::-webkit-scrollbar {
+  width: 16px;
+}
+
+.tree-view::-webkit-scrollbar-track,
+.file-list::-webkit-scrollbar-track {
+  background: #c0c0c0;
+  border: 1px solid #808080;
+}
+
+.tree-view::-webkit-scrollbar-thumb,
+.file-list::-webkit-scrollbar-thumb {
+  background: #c0c0c0;
+  border: 1px solid;
+  border-color: #dfdfdf #000000 #000000 #dfdfdf;
+}
+
+.tree-view::-webkit-scrollbar-thumb:active,
+.file-list::-webkit-scrollbar-thumb:active {
+  border-color: #000000 #dfdfdf #dfdfdf #000000;
+}

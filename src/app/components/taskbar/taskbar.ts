@@ -1,11 +1,12 @@
-import {Component, OnInit, OnDestroy} from '@angular/core';
+import {Component, OnInit, OnDestroy, Output, EventEmitter} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {TranslateService, TranslatePipe} from '@ngx-translate/core';
+import {RouterLink, RouterLinkActive} from '@angular/router';
 
 @Component({
   selector: 'app-taskbar',
   standalone: true,
-  imports: [CommonModule, TranslatePipe],
+  imports: [CommonModule, TranslatePipe, RouterLink, RouterLinkActive],
   templateUrl: './taskbar.html',
   styleUrls: ['./taskbar.css']
 })
@@ -17,6 +18,8 @@ export class Taskbar implements OnInit, OnDestroy {
   // language UI state
   langOpen = false;
   currentLang: 'en' | 'ro' = 'en';
+
+  @Output() navigate = new EventEmitter<string>();
 
   constructor(private translate: TranslateService) {
     // supported languages

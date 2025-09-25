@@ -77,16 +77,3 @@
   padding: 10px;
   background-color: #c0c0c0;
 }
-
-.dvd-screensaver-window canvas {
-  display: block;
-  margin: 0 auto;
-  border: 2px inset #c0c0c0;
-  background-color: black;
-}
-
-.dvd-screensaver-window .status {
-  margin-top: 10px;
-  font-size: 12px;
-  color: #000080;
-}

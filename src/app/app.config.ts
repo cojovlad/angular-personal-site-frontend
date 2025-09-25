@@ -5,9 +5,12 @@ import {provideHttpClient, withInterceptorsFromDi} from '@angular/common/http';
 import {provideTranslateService} from '@ngx-translate/core';
 import {provideTranslateHttpLoader} from '@ngx-translate/http-loader';
 import {provideAnimations} from '@angular/platform-browser/animations';
+import {provideRouter} from '@angular/router';
+import {routes} from './app.routes';
 
 export const appConfig: ApplicationConfig = {
   providers: [
+    provideRouter(routes),
     // provide HttpClient in the modern standalone way
     provideHttpClient(withInterceptorsFromDi()),
 

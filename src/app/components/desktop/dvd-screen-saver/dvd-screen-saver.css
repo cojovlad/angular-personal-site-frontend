@@ -1,197 +1,90 @@
-.desktop {
-  margin-top: 35px;
-  padding: 20px;
-  min-height: calc(100vh - 35px);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  box-sizing: border-box;
-}
-
-.left-column {
+.win95-window {
+  border: 2px solid;
+  border-color: #dfdfdf #000000 #000000 #dfdfdf;
+  background: #c0c0c0;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
 }
 
-.right-column {
+.dvd-screensaver-window {
+  height: 400px;
+}
+
+.title-bar {
+  background: linear-gradient(90deg, #000080, #1084d0);
+  color: white;
+  padding: 2px 4px;
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  font-weight: bold;
+  border-bottom: 2px groove;
 }
 
-.win95-window-buttons {
+.title-bar-text {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.title-bar-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.title-bar-controls {
   display: flex;
   gap: 2px;
 }
 
-.win95-btn {
-  width: 20px;
-  height: 20px;
+.title-bar-controls button {
   background: #c0c0c0;
   border: 2px solid;
-  border-color: #fff #404040 #404040 #fff;
-  padding: 0;
-  margin: 0;
-  font-size: 12px;
-  line-height: 16px;
-  text-align: center;
-  font-family: "MS Sans Serif", "Tahoma", sans-serif;
-  cursor: default;
+  border-color: #dfdfdf #000000 #000000 #dfdfdf;
+  width: 16px;
+  height: 14px;
+  font-size: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: black;
 }
 
-.win95-btn:active {
-  border-color: #404040 #fff #fff #404040;
+.title-bar-controls button:active {
+  border-color: #000000 #dfdfdf #dfdfdf #000000;
 }
 
-.personal-info-window {
+.window-body {
+  flex: 1;
+  background: white;
+  overflow: auto;
   display: flex;
   flex-direction: column;
-  border: 2px solid;
-  border-color: #fff #404040 #404040 #fff;
-  background-color: #c0c0c0;
-  font-family: "MS Sans Serif", "Tahoma", sans-serif;
 }
 
-.personal-info-window .card-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #808080;
-  color: white;
-  padding: 3px 5px;
-  font-weight: bold;
-  border-bottom: 2px solid #404040;
-}
-
-.header-icon {
-  width: 16px;
-  height: 16px;
-  margin-right: 5px;
-}
-
-.personal-info-window .card-body {
-  display: flex;
-  gap: 10px;
-  padding: 10px;
-}
-
-.photo-wrapper {
-  display: block;
-  background-color: white;
-  border: 2px solid #000;
-  padding: 2px;
-}
-
-.personal-photo {
-  display: block;
-  width: 100px;
-  height: 120px;
-  border: 2px inset #c0c0c0;
-}
-
-.info-text {
-  flex: 1;
-}
-
-.about-text {
-  margin-bottom: 0.5rem;
-}
-
-.contact-section h6 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.25rem;
-}
-
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
-
-.contact-item {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.contact-icon {
-  height: 1em;
-  width: auto;
-}
-
-.social-links {
-  display: flex;
-  gap: 5px;
-  flex-wrap: wrap;
-}
-
-.dvd-screensaver-window {
-  display: flex;
-  flex-direction: column;
-  border: 2px solid;
-  border-color: #fff #404040 #404040 #fff;
-  background-color: #c0c0c0;
-  font-family: "MS Sans Serif", "Tahoma", sans-serif;
-  flex: 1;
-}
-
-.dvd-screensaver-window .card-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #808080;
-  color: white;
-  padding: 3px 5px;
-  font-weight: bold;
-  border-bottom: 2px solid #404040;
-}
-
-.dvd-screensaver-window .card-body {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  padding: 10px;
-  background-color: #c0c0c0;
-  text-align: center;
-}
-
-.dvd-screensaver-window canvas {
-  flex: 1;
+.dvd-canvas {
   width: 100%;
+  height: calc(100% - 25px);
   border: 2px inset #c0c0c0;
   background-color: black;
   display: block;
-  margin: 0 auto;
 }
 
-.dvd-screensaver-window .status {
-  margin-top: 10px;
+.status-bar {
+  background: silver;
+  border-top: 2px groove;
+  padding: 2px 4px;
   font-size: 12px;
-  color: #000080;
-}
-
-.sections-overview-window {
+  height: 25px;
   display: flex;
-  flex-direction: column;
-  border: 2px solid;
-  border-color: #fff #404040 #404040 #fff;
-  background-color: #c0c0c0;
-  font-family: "MS Sans Serif", "Tahoma", sans-serif;
-}
-
-.sections-overview-window .card-header {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  background-color: #808080;
-  color: white;
-  padding: 3px 5px;
-  font-weight: bold;
-  border-bottom: 2px solid #404040;
 }
 
-.sections-overview-window .card-body {
-  padding: 10px;
+.status-bar-field {
+  margin: 0;
 }
