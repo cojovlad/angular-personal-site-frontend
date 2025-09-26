@@ -1,15 +1,16 @@
-.aboutme-window {
+.sections-window {
   border: 2px solid;
   border-color: #dfdfdf #000 #000 #dfdfdf;
   background: #c0c0c0;
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  flex: 1;
+  width: 100%;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  height: 410px;
+  margin-bottom: 20px;
 }
 
-.aboutme-title-bar {
+.sections-title-bar {
   background: linear-gradient(90deg, #000080, #1084d0);
   color: white;
   padding: 2px 4px;
@@ -21,23 +22,23 @@
   border-bottom: 2px groove;
 }
 
-.aboutme-title-text {
+.sections-title-text {
   display: flex;
   align-items: center;
   gap: 4px;
 }
 
-.aboutme-title-icon {
+.sections-title-icon {
   width: 16px;
   height: 16px;
 }
 
-.aboutme-title-controls {
+.sections-title-controls {
   display: flex;
   gap: 2px;
 }
 
-.aboutme-title-controls button {
+.sections-title-controls button {
   background: #c0c0c0;
   border: 2px solid;
   border-color: #dfdfdf #000 #000 #dfdfdf;
@@ -52,95 +53,92 @@
   color: black;
 }
 
-.aboutme-title-controls button:active {
+.sections-title-controls button:active {
   border-color: #000 #dfdfdf #dfdfdf #000;
 }
 
-.aboutme-body {
+.sections-body {
   flex: 1;
   background: white;
-  display: flex;
   padding: 10px;
-  gap: 20px;
-  overflow: auto;
-}
-
-.aboutme-left {
-  flex: 0 0 150px;
   display: flex;
-  justify-content: center;
-}
-
-.aboutme-photo-wrapper {
-  width: 120px;
-  height: 150px;
-  background: #fff;
-  border: 2px solid #000;
-  display: block;
-  box-sizing: border-box;
+  flex-direction: column;
   overflow: hidden;
 }
 
-.aboutme-photo {
-  display: block;
+.sections-columns {
+  display: flex;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border: 2px inset #c0c0c0;
-  box-sizing: border-box;
+  gap: 10px;
+  align-items: stretch;
 }
 
-.aboutme-right {
+.sections-column {
   flex: 1;
-  min-width: 0;
-}
-
-.aboutme-text {
-  margin-bottom: 1rem;
-}
-
-.aboutme-contact h6 {
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
-}
-
-.aboutme-contact-info {
   display: flex;
   flex-direction: column;
-  margin-bottom: 0.5rem;
 }
 
-.aboutme-contact-row {
+.sections-column .sections-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border: 2px inset #c0c0c0;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.sections-column .sections-card-header {
+  background: linear-gradient(90deg, #000080, #1084d0);
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
   display: flex;
   align-items: center;
-  margin-bottom: 4px;
+  padding: 2px 4px;
+  border-bottom: 2px groove;
+  gap: 4px;
 }
 
-.aboutme-contact-icon {
-  height: 1em;
-  width: auto;
-  margin-right: 5px;
+.sections-column .sections-card-header img {
+  width: 16px;
+  height: 16px;
 }
 
-.aboutme-social {
+.sections-column .sections-card-body {
+  flex: 1;
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+  font-size: 12px;
 }
 
-.aboutme-social-btn {
+.sections-column .sections-card-body button {
   background: #c0c0c0;
   border: 2px solid;
   border-color: #fff #404040 #404040 #fff;
-  padding: 2px 6px;
   font-size: 12px;
-  text-decoration: none;
-  color: black;
+  padding: 2px 6px;
+  cursor: pointer;
 }
 
-.aboutme-social-btn:active {
+.sections-column .sections-card-body button:active {
   border-color: #404040 #fff #fff #404040;
   background: #a0a0a0;
+}
+
+.sections-column .sections-card-body h6 {
+  margin: 5px 0;
+  font-size: 13px;
+}
+
+.sections-column .sections-card-body p {
+  margin: 2px 0;
+  font-size: 12px;
 }
 
 .aboutme-status-bar {

@@ -10,11 +10,12 @@ import {routes} from './app.routes';
 
 export const appConfig: ApplicationConfig = {
   providers: [
+    // provide routing
     provideRouter(routes),
     // provide HttpClient in the modern standalone way
     provideHttpClient(withInterceptorsFromDi()),
 
-    // Provide ngx-translate service and tell it where translation files live
+    // provide ngx-translate service and tell it where translation files live
     provideTranslateService({
       // initial defaults
       defaultLanguage: 'en',

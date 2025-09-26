@@ -1,12 +1,10 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {Taskbar} from '../taskbar/taskbar';
-import {Teaching} from '../desktop/windows/teaching/teaching';
+import {Teaching} from '../desktop/windows/overview/teaching/teaching';
 
 @Component({
   selector: 'app-teaching-page',
   imports: [
-    Teaching,
-    Taskbar
   ],
   templateUrl: './teaching-page.html',
   styleUrl: './teaching-page.css'

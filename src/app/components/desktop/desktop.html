@@ -4,32 +4,8 @@
     <app-personal-info/>
     <app-dvd-screen-saver/>
   </div>
-
   <div class="right-column">
-    <section class="card sections-overview-window">
-      <div class="card-header d-flex justify-content-between align-items-center">
-        <div class="d-flex align-items-center">
-          <img src="assets/img/site-sections.png" alt="{{ 'SITE_SECTIONS.IMAGE_ALT' | translate }}" width="16" height="16"
-               class="mr-2">
-          <span>{{ 'SITE_SECTIONS.TITLE' | translate }}</span>
-        </div>
-        <div class="win95-window-buttons">
-          <button class="win95-btn">{{ 'WINDOW_BUTTONS.MINIMIZE' | translate }}</button>
-          <button class="win95-btn">{{ 'WINDOW_BUTTONS.MAXIMIZE' | translate }}</button>
-          <button class="win95-btn">{{ 'WINDOW_BUTTONS.CLOSE' | translate }}</button>
-        </div>
-      </div>
-      <div class="card-body">
-        <div class="row">
-          <div class="col-md-6 mb-3">
-            <app-teaching/>
-          </div>
-          <div class="col-md-6 mb-3">
-            <app-solved-problems/>
-          </div>a
-        </div>
-      </div>
-    </section>
+    <app-overview/>
   </div>
 
 </main>

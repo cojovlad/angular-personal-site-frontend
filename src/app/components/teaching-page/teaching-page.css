@@ -1,6 +1,6 @@
 .window-container {
   position: fixed;
-  top: 40px; /* Distance from taskbar */
+  top: 40px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -152,7 +152,6 @@
   flex: 1;
 }
 
-/* Scrollbar styling */
 .tree-view::-webkit-scrollbar,
 .file-list::-webkit-scrollbar {
   width: 16px;
@@ -174,4 +173,9 @@
 .tree-view::-webkit-scrollbar-thumb:active,
 .file-list::-webkit-scrollbar-thumb:active {
   border-color: #000000 #dfdfdf #dfdfdf #000000;
+}
+
+.file-icon {
+  width: 16px;
+  height: 16px;
 }

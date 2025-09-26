@@ -20,6 +20,7 @@
   },
   "ABOUT_ME": {
     "TITLE": "About Me",
+    "BUTTON": "BACHELOR THESIS",
     "IMAGE_ALT": "Profile Icon",
     "PHOTO_ALT": "Your Photo",
     "BIO": "To be completed - BIO",
@@ -49,7 +50,7 @@
     "TITLE": "Solved Problems",
     "IMAGE_ALT": "Solved Problems Icon",
     "SUBTITLE": "Solutions",
-    "DESCRIPTION": "Solutions to challenging problems.",
+    "DESCRIPTION": "C++ solutions for PbInfo problems and Python solutions for LeetCode problems.",
     "OPEN_BUTTON": "Open"
   },
   "DESCRIPTION": {

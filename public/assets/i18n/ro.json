@@ -1,4 +1,7 @@
 {
+  "BACHELOR": {
+    "BUTTON": "LUCRARE LICENTA"
+  },
   "TASKBAR": {
     "START": "Start",
     "ABOUT_ME": "Despre mine",
@@ -21,6 +24,7 @@
   "ABOUT_ME": {
     "TITLE": "Despre mine",
     "IMAGE_ALT": "Pictograma profil",
+    "BUTTON": "Lucrare Licenta",
     "PHOTO_ALT": "Fotografia ta",
     "BIO": "De completat - BIO",
     "CONTACT": {
@@ -49,7 +53,7 @@
     "TITLE": "Probleme rezolvate",
     "IMAGE_ALT": "Pictograma Probleme Rezolvate",
     "SUBTITLE": "Solutii",
-    "DESCRIPTION": "Solutii pentru probleme provocatoare.",
+    "DESCRIPTION": "Solutii in C++ pentru problemele PbInfo si solutii in Python pentru problemele LeetCode, urmeaza sa fie construita pe viitor aceasta pagina.",
     "OPEN_BUTTON": "Deschide"
   },
   "DESCRIPTION": {
