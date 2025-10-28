@@ -1,0 +1,51 @@
+/* solved-problems.css */
+.work-in-progress-container {
+  margin-top: 35px;
+  padding: 40px 20px;
+  text-align: center;
+  min-height: calc(100vh - 35px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #008080;
+  font-family: "MS Sans Serif", Tahoma, sans-serif;
+}
+
+.work-in-progress-container p {
+  font-size: 18px;
+  color: white;
+  margin: 0;
+  padding: 20px;
+  background-color: #000080;
+  border: 2px solid #c0c0c0;
+  border-style: outset;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .work-in-progress-container {
+    margin-top: 40px;
+    padding: 60px 20px;
+    min-height: calc(100vh - 40px);
+  }
+
+  .work-in-progress-container p {
+    font-size: 16px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .work-in-progress-container {
+    margin-top: 45px;
+    padding: 80px 15px;
+    min-height: calc(100vh - 45px);
+  }
+
+  .work-in-progress-container p {
+    font-size: 14px;
+    padding: 12px;
+  }
+}

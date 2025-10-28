@@ -1,3 +1,4 @@
+/* personal-info.css */
 .aboutme-window {
   border: 2px solid;
   border-color: #dfdfdf #000 #000 #dfdfdf;
@@ -117,9 +118,10 @@
 }
 
 .aboutme-contact-icon {
-  height: 1em;
-  width: auto;
+  width: 1.2em;
+  height: 1.2em;
   margin-right: 5px;
+  object-fit: contain;
 }
 
 .aboutme-social {
@@ -136,6 +138,8 @@
   font-size: 12px;
   text-decoration: none;
   color: black;
+  white-space: nowrap;
+  text-align: center;
 }
 
 .aboutme-social-btn:active {
@@ -155,4 +159,106 @@
 
 .aboutme-status-field {
   margin: 0;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .aboutme-window {
+    height: auto;
+    min-height: 400px;
+  }
+
+  .aboutme-body {
+    flex-direction: column;
+    gap: 15px;
+    padding: 8px;
+  }
+
+  .aboutme-left {
+    flex: 0 0 auto;
+    justify-content: center;
+  }
+
+  .aboutme-photo-wrapper {
+    width: 100px;
+    height: 125px;
+  }
+
+  .aboutme-right {
+    flex: 1;
+  }
+
+  .aboutme-social {
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .aboutme-social-btn {
+    flex: none;
+    min-width: auto;
+    padding: 4px 10px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutme-window {
+    margin-bottom: 10px;
+  }
+
+  .aboutme-body {
+    padding: 5px;
+    gap: 10px;
+  }
+
+  .aboutme-photo-wrapper {
+    width: 80px;
+    height: 100px;
+  }
+
+  .aboutme-contact-row {
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .aboutme-contact-icon {
+    flex-shrink: 0;
+  }
+
+  .aboutme-social {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    justify-content: center;
+  }
+
+  .aboutme-social-btn {
+    padding: 6px 8px;
+    font-size: 11px;
+    text-align: center;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 360px) {
+  .aboutme-social {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .aboutme-social-btn {
+    padding: 5px 8px;
+    font-size: 10px;
+  }
+
+  .aboutme-contact-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+
+  .aboutme-contact-row a {
+    word-break: break-all;
+  }
 }

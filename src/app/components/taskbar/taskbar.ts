@@ -6,7 +6,7 @@ import {RouterLink, RouterLinkActive} from '@angular/router';
 @Component({
   selector: 'app-taskbar',
   standalone: true,
-  imports: [CommonModule, TranslatePipe, RouterLink, RouterLinkActive],
+  imports: [CommonModule, TranslatePipe, RouterLink],
   templateUrl: './taskbar.html',
   styleUrls: ['./taskbar.css']
 })

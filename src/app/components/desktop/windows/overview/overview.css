@@ -1,3 +1,4 @@
+/* overview.css */
 .sections-window {
   border: 2px solid;
   border-color: #dfdfdf #000 #000 #dfdfdf;
@@ -153,4 +154,54 @@
 
 .aboutme-status-field {
   margin: 0;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .sections-columns {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .sections-column {
+    min-height: 150px;
+  }
+
+  .sections-body {
+    padding: 8px;
+  }
+
+  .sections-column .sections-card-body {
+    padding: 10px 5px;
+  }
+
+  .sections-column .sections-card-body h6 {
+    font-size: 14px;
+  }
+
+  .sections-column .sections-card-body p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sections-body {
+    padding: 5px;
+  }
+
+  .sections-columns {
+    gap: 10px;
+  }
+
+  .sections-column {
+    min-height: 120px;
+  }
+
+  .sections-column .sections-card-body h6 {
+    font-size: 13px;
+  }
+
+  .sections-column .sections-card-body p {
+    font-size: 12px;
+  }
 }

@@ -51,7 +51,8 @@
     "IMAGE_ALT": "Solved Problems Icon",
     "SUBTITLE": "Solutions",
     "DESCRIPTION": "C++ solutions for PbInfo problems and Python solutions for LeetCode problems, the page for this will be built in the future",
-    "OPEN_BUTTON": "Open"
+    "OPEN_BUTTON": "Open",
+    "WORK_IN_PROGRESS": "This page is work in progress..."
   },
   "DESCRIPTION": {
     "ABOUT_ME": "Hello! I am Vlad, a programmer passionate about building projects and exploring new technologies."

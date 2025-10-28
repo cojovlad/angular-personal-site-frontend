@@ -8,6 +8,64 @@ body {
   padding: 0;
 }
 
+/* Target iOS Safari */
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    button,
+    .taskbar-app,
+    .start-button,
+    .lang-toggle,
+    .lang-item,
+    .aboutme-title-controls button,
+    .aboutme-social-btn {
+      -webkit-appearance: none;
+      -webkit-tap-highlight-color: transparent;
+      color: #000000;
+      font-weight: normal;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    button a,
+    .taskbar-app a,
+    .start-button a,
+    .lang-toggle a,
+    .lang-item a {
+      color: #000000;
+      font-weight: normal;
+      -webkit-font-smoothing: antialiased;
+      text-decoration: none;
+    }
+  }
+}
+
+/* Extra check for other iOS Safari-only support */
+@supports (-webkit-touch-callout: none) {
+  button,
+  .taskbar-app,
+  .start-button,
+  .lang-toggle,
+  .lang-item,
+  .aboutme-title-controls button,
+  .aboutme-social-btn {
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    color: #000000;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  button a,
+  .taskbar-app a,
+  .start-button a,
+  .lang-toggle a,
+  .lang-item a {
+    color: #000000;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+  }
+}
+
 .fade-in {
   animation: fadeIn 0.3s;
 }

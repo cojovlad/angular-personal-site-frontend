@@ -1,3 +1,4 @@
+/* teaching-page.css */
 .window-container {
   position: fixed;
   top: 40px;
@@ -178,4 +179,83 @@
 .file-icon {
   width: 16px;
   height: 16px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .window-container {
+    top: 40px;
+    padding: 5px;
+  }
+
+  .window-body {
+    flex-direction: column;
+    height: calc(100% - 60px);
+  }
+
+  .tree-view {
+    width: 100%;
+    border-right: none;
+    border-bottom: 2px groove;
+    max-height: 150px;
+  }
+
+  .file-list {
+    flex: 1;
+    overflow: auto;
+  }
+
+  .w95-table {
+    font-size: 12px;
+  }
+
+  .w95-table th,
+  .w95-table td {
+    padding: 4px 6px;
+  }
+
+  .menu-bar {
+    flex-wrap: wrap;
+  }
+
+  .menu-item {
+    padding: 4px 6px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .window-container {
+    top: 45px;
+    padding: 2px;
+  }
+
+  .tree-view {
+    max-height: 120px;
+    font-size: 12px;
+  }
+
+  .w95-table {
+    font-size: 11px;
+  }
+
+  .w95-table th,
+  .w95-table td {
+    padding: 3px 4px;
+  }
+
+  .menu-item {
+    padding: 3px 4px;
+    font-size: 11px;
+    flex: 1;
+    text-align: center;
+  }
+
+  .title-bar-text {
+    font-size: 12px;
+  }
+
+  .status-bar {
+    font-size: 11px;
+  }
 }

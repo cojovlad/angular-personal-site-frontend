@@ -5,7 +5,7 @@ import {Desktop} from "./components/desktop/desktop";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Taskbar, Desktop],
+  imports: [RouterOutlet, Taskbar],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

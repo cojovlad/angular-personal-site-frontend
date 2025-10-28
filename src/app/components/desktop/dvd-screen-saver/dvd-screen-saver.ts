@@ -5,7 +5,6 @@ import {TranslatePipe} from '@ngx-translate/core';
   selector: 'app-dvd-screen-saver',
   templateUrl: './dvd-screen-saver.html',
   imports: [
-    TranslatePipe
   ],
   styleUrls: ['./dvd-screen-saver.css']
 })

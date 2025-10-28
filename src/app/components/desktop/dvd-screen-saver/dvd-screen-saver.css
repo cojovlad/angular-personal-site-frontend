@@ -1,3 +1,4 @@
+/* dvd-screen-saver.css */
 .win95-window {
   border: 2px solid;
   border-color: #dfdfdf #000000 #000000 #dfdfdf;
@@ -87,4 +88,26 @@
 
 .status-bar-field {
   margin: 0;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .dvd-screensaver-window {
+    height: 300px;
+  }
+
+  .dvd-canvas {
+    height: calc(100% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .dvd-screensaver-window {
+    height: 250px;
+  }
+
+  .status-bar {
+    height: 20px;
+    font-size: 11px;
+  }
 }

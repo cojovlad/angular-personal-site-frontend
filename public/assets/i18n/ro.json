@@ -54,7 +54,8 @@
     "IMAGE_ALT": "Pictograma Probleme Rezolvate",
     "SUBTITLE": "Solutii",
     "DESCRIPTION": "Solutii in C++ pentru problemele PbInfo si solutii in Python pentru problemele LeetCode, urmeaza sa fie construita pe viitor aceasta pagina.",
-    "OPEN_BUTTON": "Deschide"
+    "OPEN_BUTTON": "Deschide",
+    "WORK_IN_PROGRESS": "Pagina aceasta este in lucru..."
   },
   "DESCRIPTION": {
     "ABOUT_ME": "Salut! Eu sunt Vlad, un programator pasionat de proiecte si technologii interesante."

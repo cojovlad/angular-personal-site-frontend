@@ -1,3 +1,4 @@
+/* taskbar.css */
 .taskbar {
   position: fixed;
   top: 0;
@@ -13,12 +14,25 @@
   padding: 0 5px;
   z-index: 1000;
   box-sizing: border-box;
+  font-family: "MS Sans Serif", Tahoma, sans-serif;
 }
 
 .taskbar-left {
   display: flex;
   align-items: center;
   height: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  flex: 1;
+  min-width: 0;
+  margin-right: 10px;
+}
+
+.taskbar a:visited,
+.taskbar a:active,
+.taskbar a:focus {
+  color: inherit;
+  text-decoration: none;
 }
 
 .start-button {
@@ -31,6 +45,7 @@
   font-weight: bold;
   margin-right: 10px;
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .start-button:active {
@@ -51,8 +66,9 @@
   margin-right: 3px;
   background-color: #C0C0C0;
   border: 2px outset #C0C0C0;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .taskbar-app:active {
@@ -79,6 +95,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .taskbar-clock {
@@ -90,7 +107,7 @@
   border: 2px inset #C0C0C0;
   font-family: 'MS Sans Serif', Tahoma, sans-serif;
   font-size: 12px;
-  font-weight: bold;
+  font-weight: normal;
   gap: 6px;
   cursor: default;
 }
@@ -142,4 +159,142 @@
 .lang-item img {
   width: 16px;
   height: 11px;
+}
+
+/* Mobile Styles*/
+@media (max-width: 768px) {
+  .taskbar {
+    height: 40px;
+    padding: 0 3px;
+    gap: 10px;
+  }
+
+  .taskbar-left {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    margin-right: 5px;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .taskbar-left::-webkit-scrollbar {
+    display: none;
+  }
+
+  .start-button {
+    height: 30px;
+    padding: 0 6px;
+    font-size: 12px;
+    margin-right: 5px;
+    flex-shrink: 0;
+  }
+
+  .taskbar-app {
+    height: 30px;
+    padding: 0 8px;
+    font-size: 12px;
+    flex-shrink: 0;
+  }
+
+  /* Show only icons on smaller screens */
+  @media (max-width: 600px) {
+    .taskbar-app span {
+      display: none;
+    }
+
+    .taskbar-app {
+      padding: 0 6px;
+      min-width: 40px;
+      justify-content: center;
+    }
+
+    .taskbar-app img {
+      margin-right: 0;
+    }
+
+    .start-button span {
+      display: none;
+    }
+
+    .start-button {
+      min-width: 40px;
+      justify-content: center;
+      padding: 0 8px;
+    }
+
+    .start-button img {
+      margin-right: 0;
+    }
+  }
+
+  .taskbar-clock {
+    height: 30px;
+    font-size: 11px;
+    padding: 0 6px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .lang-menu {
+    top: 32px;
+    min-width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .taskbar {
+    height: 45px;
+    gap: 5px;
+  }
+
+  .start-button {
+    height: 35px;
+    min-width: 45px;
+  }
+
+  .taskbar-app {
+    height: 35px;
+    min-width: 45px;
+    justify-content: center;
+  }
+
+  .taskbar-clock {
+    height: 35px;
+    font-size: 10px;
+    padding: 0 4px;
+  }
+
+  /* Hide time text, keep only flag on very small screens */
+  @media (max-width: 360px) {
+    .taskbar-clock span:not(.lang-toggle) {
+      display: none;
+    }
+
+    .taskbar-clock {
+      padding: 0 2px;
+    }
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 320px) {
+  .taskbar {
+    padding: 0 2px;
+  }
+
+  .taskbar-app {
+    min-width: 40px;
+    padding: 0 4px;
+  }
+
+  .start-button {
+    min-width: 40px;
+    padding: 0 6px;
+  }
+
+  .taskbar-clock {
+    min-width: 60px;
+  }
 }
